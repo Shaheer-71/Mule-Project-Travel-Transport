@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="travelontrip-externalsystemFlow" doc:id="2026299b-4c8e-4ddd-899f-53f4eefa6aa2" >
+		<http:listener doc:name="Listener" doc:id="bca0ebf6-b210-4ee0-be38-b098d56140d6" config-ref="HTTP_Listener_config" path="${http.listener.path}"/>
+		<set-variable value="ABC" doc:name="Set Variable" doc:id="d78b2943-06de-45e6-b256-f85194c4b1ed" variableName="Dummy"/>
+	</flow>
+</mule>
