@@ -1,6 +1,14 @@
 
 http :
   listener:
-    host: "localhost"
+    host: "0.0.0.0"
     port: "8081"
-    path: "/getRoutes"
+    path: "/travelOnTripCall/{serviceType}"
+   
+db:
+  sql:
+    host: "localhost"
+    port: "3306"
+    user: "root"
+    password: "root123"
+    dbName: "schedulenroutes"
